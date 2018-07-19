@@ -1,5 +1,7 @@
 # k8s-wordpress
 
 1. Setup VPC
-
-execute vpc.tf to create vpc
+execute the terraform script in this order
+- vpc.tf
+- route.tf
+- security.tf
