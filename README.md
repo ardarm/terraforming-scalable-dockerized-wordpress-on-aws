@@ -39,6 +39,6 @@ execute the script in this order
             
  **5.Final Words**
  
- Finally looking through the challenge and solution, i realize many flaws in the build-up process and result, but i tried my best to provide my answer to the challenge. This is a basic challenging case, which is actually i enjoy and will be my walkthrough to the Cloud Native path.
+ Finally looking through the challenge and solution, i realized many flaws in the build-up process and result, but i tried my best to provide my answer to the challenge. This is a basic challenging case, which is actually i enjoy and will be my walkthrough to the Cloud Native path.
  
 THANKS !
