@@ -1,6 +1,6 @@
 # k8s-wordpress
 
-1. Setup VPC
+**1. Setup VPC**
 
 execute the script in this order
 - vpc.tf (create vpc)
@@ -9,7 +9,7 @@ execute the script in this order
 
 Change nameservers after completed.
 
-2. Create instance and database
+**2. Create instance and database**
 
 execute the script in this order
 - database.tf (create RDS)
@@ -17,7 +17,7 @@ execute the script in this order
 - bootstrap.tpl (install docker community edition and wordpress)
 - routeinstance.tf (add dns record)
 
-3. Redundancy
+**3. Redundancy**
 
 execute the script in this order
 - efs.tf (create elastic file system)
