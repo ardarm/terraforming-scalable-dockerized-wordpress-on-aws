@@ -14,6 +14,7 @@ Change nameservers after completed.
 execute the terraform script in this order
 - database.tf (create RDS)
 - instance.tf (create instance)
+- bootstrap.tpl (install docker community edition and wordpress)
 - routeinstance.tf (add dns record)
 
 3. Redundancy
