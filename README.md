@@ -24,4 +24,4 @@ execute the script in this order
 - efs_securitygroup.tf (add efs to the security group)
 - elb.tf (create elastic load-balancer)
 - elb_route.tf (adding elb to route53)
-- autoscalling.tf (define auto-saclling group)
+- autoscalling.tf (define auto-scalling group)
