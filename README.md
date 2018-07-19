@@ -28,3 +28,17 @@ execute the script in this order
 - elb.tf (create elastic load-balancer)
 - elb_route.tf (adding elb to route53)
 - autoscalling.tf (define auto-scalling group)
+
+**4.Auto-scalling Policy**
+
+- execute script autoscalling_policy.tf to change capacity
+- If CPU reach 80% load, then autoscalling will ad 2 extra nodes
+- we can use stress to give load to cpu
+  command : apt-get install stress
+            stress -c 90
+            
+ **5.Final Words**
+ 
+ Finally looking through the challenge and solution, i realize many flaws in the build-up process and result, but i tried my best to provide my answer to the challenge. This is a basic challenging case, which is actually i enjoy and will be my walkthrough to the Cloud Native path.
+ 
+THANKS !
