@@ -1,5 +1,8 @@
 # k8s-wordpress
 
+_Building wordpress site in AWS with terraform and Docker container_
+
+
 **1. Setup VPC**
 
 execute the script in this order
