@@ -6,3 +6,5 @@ execute the terraform script in this order
 - vpc.tf
 - route.tf
 - security.tf
+
+Change nameservers after completed.
