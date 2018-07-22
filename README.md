@@ -26,10 +26,18 @@ In this section, our activity is :
 - Create RDS
 - Create EC2
 - Add DNS record to Route53
+- Mount EFS on start and assign it to docker
+- Update ELB DNS record Route53
+- Define Auto-Scaling Group
 
 **3. Redundancy**
 
-Move all the step-2 file to the outside terraform directory. Prepare all the step-3 configuration then you can execute "terraform init", then "terraform apply"
+Clone my folder step-3 on your terraform directory. edit .tf file according your environment, then run command "terraform init", followed by "terraform apply".
+
+In this section, our activity is :
+- Create EFS to store static content such as images, css, and javascript.
+- Add Security group for EFS
+- Create ELB to routing traffic
 
 **4.Auto-scalling Policy**
 
