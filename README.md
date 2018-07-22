@@ -1,4 +1,4 @@
-# k8s-wordpress
+# High-Availability Wordpress on Docker
 
 _Building wordpress site in AWS with terraform and Docker container_
 
