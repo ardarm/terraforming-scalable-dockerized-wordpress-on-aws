@@ -41,14 +41,17 @@ In this section, our activity is :
 
 **4.Auto-scalling Policy**
 
-- Again, move all the step-3 files, prepare the step-4 files, then execute "terraform init" and "terraform apply"
+Clone my folder step-4 on your terraform directory. modify the files based your environment, then run command "terraform init", followed by "terraform apply".
+
+In this section our activity is :
+- Adding new policies to the auto-scalling group 
 - If CPU reach 80% load, then autoscalling will ad 2 extra nodes
 - we can use stress to give load to cpu. Please ssh to one of the server, the execute
   command : apt-get install stress
             stress -c 90
+- Login to your AWS account to make sure new additional nodes created to handle the load stress.
+- Stop the stress tools and check again if the new nodes terminates after the load stress down.
             
  **5.Final Words**
  
- Finally looking through the challenge and solution, i realized many flaws in the build-up process and result, but i tried my best to provide my answer to the challenge. This is a basic challenging case, which is actually i enjoy and will be my walkthrough to the Cloud Native path.
- 
-THANKS !
+Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build high-scalable web-application infrastucture. I'm sure will keep updating and improving many aspect on this project.
