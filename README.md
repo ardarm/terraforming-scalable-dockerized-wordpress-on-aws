@@ -22,9 +22,9 @@ Prepare your name and change nameservers after completed.
 
 Clone my folder step-2 on your terraform directory. make changes according to your environment, then run command "terraform init", followed by "terraform apply".
 
-In this section we created :
-- RDS
-- EC2
+In this section, our activity is :
+- Create RDS
+- Create EC2
 - Add DNS record to Route53
 
 **3. Redundancy**
