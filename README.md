@@ -54,4 +54,4 @@ In this section our activity is :
             
  **5.Final Words**
  
-Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build high-scalable web-application infrastucture. I'm sure will keep updating and improving many aspect on this project.
+Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build high-scalable web-application infrastucture. I'm sure will keep update and improving many aspect of this project.
