@@ -20,7 +20,12 @@ Prepare your name and change nameservers after completed.
 
 **2. Create instance and database**
 
-Clone my folder step-2 on your terraform directory. make changes according to your environment, then run command "terraform init", followed by "terraform apply"
+Clone my folder step-2 on your terraform directory. make changes according to your environment, then run command "terraform init", followed by "terraform apply".
+
+In this section we created :
+- RDS
+- EC2
+- Add DNS record to Route53
 
 **3. Redundancy**
 
