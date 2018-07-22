@@ -5,13 +5,22 @@ _Building wordpress site in AWS with terraform and Docker container_
 
 **1. Setup VPC**
 
-Create tf configuration file like in the folder step-1, then run "terraform init" followed by "terraform apply"
+Clone my folder step-1 on your terraform directory. Edit the file based on your aws credential account and needs, then run command "terraform init" followed by "terraform apply".
 
-Change nameservers after completed.
+Components created
+- VPC
+- DNS
+- Security Groups
+- Subnets
+- NAT
+- Internet Gateway
+- Routing Tables
+
+Prepare your name and change nameservers after completed.
 
 **2. Create instance and database**
 
-After execute configuration in the step-1, move all the files to another directory outside the terraform folder. Prepare step-2 files, then you can execute "teraform init" then "terraform apply"
+Clone my folder step-2 on your terraform directory. make changes according to your environment, then run command "terraform init", followed by "terraform apply"
 
 **3. Redundancy**
 
