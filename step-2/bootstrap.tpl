@@ -1,4 +1,3 @@
-whoami
 apt-get -y update
 apt-get -y install unattended-upgrades
 curl 'https://bootstrap.pypa.io/get-pip.py' -o 'get-pip.py'
