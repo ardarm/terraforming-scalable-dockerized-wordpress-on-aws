@@ -24,7 +24,7 @@ Components created
 
 For the DNS, you can user route53 or another DNS Record service like cloudflare(i'm using it).
 
-**2. Step-2**
+**Step-2**
 -------------
 In this section, our main purpose is to create EC2 and RDS
 
