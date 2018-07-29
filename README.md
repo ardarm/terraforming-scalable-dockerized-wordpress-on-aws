@@ -21,26 +21,26 @@ Components created
 - NAT & Internet Gateway
 - Routing Tables
 
-**2. Create instance and database**
+For the DNS, you can user route53 or another DNS Record service like cloudflare(i'm using it).
 
-Clone my folder step-2 on your terraform directory. make changes according to your environment, then run command "terraform init", followed by "terraform apply".
+**2. Step-2**
+In this section, our main purpose is to create EC2 and RDS
 
-In this section, our activity is :
-- Create RDS
-- Create EC2
-- Add DNS record to Route53
-- Mount EFS on start and assign it to docker
-- Update ELB DNS record Route53
-- Define Auto-Scaling Group
+Components created :
+- EC2-Instance(with wordpress container pointing connection to RDS)
+- RDS 
 
-**3. Redundancy**
+After the process completed, login to your AWS account, go to EC2 menu then copy your EC2 public IP adrress or Public DNS to your choosen DNS record service. Put your domain name to pointing to the IP Address. Try to access your domain name from browser. You can see the wordpress page showing on your browser. Since this is just one instance, we will destroy this instance in the next step and deploy the instance via Auto-Scaling in the step-4.
 
-Clone my folder step-3 on your terraform directory. edit .tf file according your environment, then run command "terraform init", followed by "terraform apply".
+**Step-3**
 
-In this section, our activity is :
-- Create EFS to store static content such as images, css, and javascript.
-- Add Security group for EFS
-- Create ELB to routing traffic
+Since we will deploy minimum 2 instance for High-Availability purpose, file storage will be needed here to store files like javascript, CSS, and images. We will use Amazon EFS here for storing the static files.
+
+Component created :
+- EFS
+- Add additional Security Group for EFS
+
+After completed, you will see the EC2-Instance destroyed because we're not included the EC2 script in this step, but in the next step, we will deploy it again via Auto-Scaling.
 
 **4.Auto-scalling Policy**
 
