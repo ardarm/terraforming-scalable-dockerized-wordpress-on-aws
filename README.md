@@ -57,9 +57,21 @@ After the process completed, login to your AWS account and click on the ELB menu
 
 **Step-5**
 ----------
+In this section, we will add Auto-Scaling policy, which is change in capacity to add 2 nodes if the CPU reach 80% beyond 4 minutes.
+
+Components created :
+- Auto-Scaling Policy to add 2 nodes.
+- Cloudwatch metric alarm for high-CPU
 
 **Step-6**
 ----------
+Finally, we arrived at the last step of our journey to build scalable wordpress website. In this step, we will add Auto-Scaling policy, which is change in capacity to terminate 2 nodes if the CPU under 25% beyond 4 minutes(after high-cpu alarm).
+
+Components created :
+- Auto-Scaling Policy to terminate 2 nodes.
+- Cloudwatch metric alarm for low-CPU
+
+After the execute completed, we can test the scalability of our Wordpress site now. You can use tools like Artilery or Stress to test your website. In this tutorial we will use Stress to load-test the website. SSH to both of your instance, execute command "sudo apt-get install stress" and your tools is ready to be used. Simply execute command "stress -c 90" and wait until 4 minutes to let the Cloudwatch trigerring the High-CPU Auto-Scaling Policy. Login to your AWS Account and you can see 2 new nodes launched. After the nodes ready, terminate your Stress tool (press ctrl+c) and wait until 4 minutes to see your Cloudwatch trigerring Low-CPU Policy.
             
  **Final Words**
  
