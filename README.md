@@ -75,4 +75,4 @@ After the execute completed, we can test the scalability of our Wordpress site n
             
  **Final Words**
  
-Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build high-scalable web-application infrastucture. I'm sure will keep update and improving many aspect of this project.
+Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build simple high-scalable web-application infrastucture. I'm sure will keep update and improving many aspect of this project.
