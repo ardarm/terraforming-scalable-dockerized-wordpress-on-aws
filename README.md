@@ -1,6 +1,6 @@
-# High-Availability Wordpress on Docker
+# High-Availability Wordpress on AWS & Docker
 
-_Building wordpress site in AWS with terraform and Docker container_
+_Building wordpress site on AWS using terraform and Docker container_
 
 
 **1. Setup VPC**
