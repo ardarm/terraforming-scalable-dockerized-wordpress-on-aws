@@ -42,7 +42,7 @@ Component created :
 - EFS
 - Add additional Security Group for EFS
 
-After completed, you will see the EC2-Instance destroyed because we're not included the EC2 script in this step, but in the next step, we will deploy it again via Auto-Scaling.
+After completed, you will see the EC2-Instance is destroyed because we're not included the EC2 script in this step, but in the next step, we will deploy it again via Auto-Scaling.
 
 **4.Auto-scalling Policy**
 
