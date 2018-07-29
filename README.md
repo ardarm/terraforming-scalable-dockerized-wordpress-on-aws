@@ -74,5 +74,5 @@ Components created :
 After the execute completed, we can test the scalability of our Wordpress site now. You can use tools like Artilery or Stress to test your website. In this tutorial we will use Stress to load-test the website. SSH to both of your instance, execute command "sudo apt-get install stress" and your tools is ready to be used. Simply execute command "stress -c 90" and wait until 4 minutes to let the Cloudwatch trigerring the High-CPU Auto-Scaling Policy. Login to your AWS Account and you can see 2 new nodes launched. After the nodes ready, terminate your Stress tool (press ctrl+c) and wait until 4 minutes to see your Cloudwatch trigerring Low-CPU Policy.
             
  **Final Words**
- 
+ ---------------
 Finally, i realized many flaws in the build-up process. This is an interesting project on how to build simple high-scalable web-application infrastucture. I'm sure will keep update and improving the process.
