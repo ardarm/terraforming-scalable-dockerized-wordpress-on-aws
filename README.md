@@ -44,19 +44,23 @@ Component created :
 
 After completed, you will see the EC2-Instance is destroyed because we're not included the EC2 script in this step, but in the next step, we will deploy it again via Auto-Scaling.
 
-**4.Auto-scalling Policy**
+**Step-4**
+----------
+In this step, we are back to deploy EC2-Instance, but this time we will launch 2 instance via Auto-Scaling and it will be ELB member. The EC2 will be mounted to EFS at /efs folder. Wordpress container will ber mounted to the /efs directory.
 
-Clone my folder step-4 on your terraform directory. modify the files based your environment, then run command "terraform init", followed by "terraform apply".
+Components created :
+- 2 EC2-Instance(with wordpress container inside)
+- Elastic Load Balancer
+- Auto-Scaling Group
 
-In this section our activity is :
-- Adding new policies to the auto-scalling group 
-- If CPU reach 80% load, then autoscalling will ad 2 extra nodes
-- we can use stress to give load to cpu. Please ssh to one of the server, the execute
-  command : apt-get install stress
-            stress -c 90
-- Login to your AWS account to make sure new additional nodes created to handle the load stress.
-- Stop the stress tools and check again if the new nodes terminates after the load stress down.
+After the process completed, login to your AWS account and click on the ELB menu to capture your ELB public DNS or you can copy it from terraform.tfstate file too. Paste it to your DNS Record(change the public IP/public DNS you have used before).
+
+**Step-5**
+----------
+
+**Step-6**
+----------
             
- **5.Final Words**
+ **7.Final Words**
  
 Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build high-scalable web-application infrastucture. I'm sure will keep update and improving many aspect of this project.
