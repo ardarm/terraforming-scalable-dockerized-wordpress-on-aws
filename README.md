@@ -8,7 +8,7 @@ Pre-requisite to run the script :
 - Internet Connection
 - AWS Account
 
-Clone my whole project folder and put terraform.exe file into every step folder(1-6). Enter the directory in sequence from 1 to 6. To execute the script, first run command "terraform init", followed by "terraform apply". If you want to see the change before execute, you can execute command "terraform plan". After every "terraform apply" command, dont'forget to copy terraform.tfstate file to the next folder. For example, you execute in folder step-1, then after completed, copy terraform.tfstate file to folder step-2. Execute terraform in folder 2, then after complete, copy terraform.tfstate file from folder step-2 to folder step-3 and so on until folder step-6.
+Clone this project and put terraform.exe file into every step folder(1-6). Enter the directory in sequence from 1 to 6. To execute the script, first run command "terraform init", followed by "terraform apply". If you want to see the change before execute, you can execute command "terraform plan". After every "terraform apply" command, dont'forget to copy terraform.tfstate file to the next folder. For example, you execute in folder step-1, then after completed, copy terraform.tfstate file to folder step-2. Execute terraform in folder 2, then after complete, copy terraform.tfstate file from folder step-2 to folder step-3 and so on until folder step-6.
 
 
 **Step-1**
@@ -75,4 +75,4 @@ After the execute completed, we can test the scalability of our Wordpress site n
             
  **Final Words**
  
-Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build simple high-scalable web-application infrastucture. I'm sure will keep update and improving many aspect of this project.
+Finally, i realized many flaws in the build-up process. This is an interesting project on how to build simple high-scalable web-application infrastucture. I'm sure will keep update and improving the process.
