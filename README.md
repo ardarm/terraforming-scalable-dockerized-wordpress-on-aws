@@ -3,20 +3,23 @@
 _Building wordpress site on AWS using terraform and Docker container_
 
 
-**1. Setup VPC**
+Pre-requisite to run the script :
+- Install Terraform
+- Internet Connection
+- AWS Account
 
-Clone my folder step-1 on your terraform directory. Edit the file based on your aws credential account and needs, then run command "terraform init" followed by "terraform apply".
+Clone my whole project folder and put terraform.exe file into every step folder(1-6). Enter the directory in sequence from 1 to 6. To execute the script, first run command "terraform init", followed by "terraform apply". If you want to see the change before execute, you can execute command "terraform plan". After every "terraform apply" command, dont'forget to copy terraform.tfstate file to the next folder. For example, you execute in folder step-1, then after completed, copy terraform.tfstate file to folder step-2. Execute terraform in folder 2, then after complete, copy terraform.tfstate file from folder step-2 to folder step-3 and so on until folder step-6.
+
+
+**Step-1**
+In this section, we created base VPC for the website.
 
 Components created
 - VPC
-- DNS
 - Security Groups
 - Subnets
-- NAT
-- Internet Gateway
+- NAT & Internet Gateway
 - Routing Tables
-
-Prepare your name and change nameservers after completed.
 
 **2. Create instance and database**
 
