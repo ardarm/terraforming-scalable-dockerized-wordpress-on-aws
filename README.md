@@ -61,6 +61,6 @@ After the process completed, login to your AWS account and click on the ELB menu
 **Step-6**
 ----------
             
- **7.Final Words**
+ **Final Words**
  
 Finally i realized many flaws in the build-up process and result. This is an interesting project on how to build high-scalable web-application infrastucture. I'm sure will keep update and improving many aspect of this project.
