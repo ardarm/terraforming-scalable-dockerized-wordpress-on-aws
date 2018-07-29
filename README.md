@@ -12,6 +12,7 @@ Clone my whole project folder and put terraform.exe file into every step folder(
 
 
 **Step-1**
+----------
 In this section, we created base VPC for the website.
 
 Components created
@@ -24,6 +25,7 @@ Components created
 For the DNS, you can user route53 or another DNS Record service like cloudflare(i'm using it).
 
 **2. Step-2**
+-------------
 In this section, our main purpose is to create EC2 and RDS
 
 Components created :
@@ -33,7 +35,7 @@ Components created :
 After the process completed, login to your AWS account, go to EC2 menu then copy your EC2 public IP adrress or Public DNS to your choosen DNS record service. Put your domain name to pointing to the IP Address. Try to access your domain name from browser. You can see the wordpress page showing on your browser. Since this is just one instance, we will destroy this instance in the next step and deploy the instance via Auto-Scaling in the step-4.
 
 **Step-3**
-
+----------
 Since we will deploy minimum 2 instance for High-Availability purpose, file storage will be needed here to store files like javascript, CSS, and images. We will use Amazon EFS here for storing the static files.
 
 Component created :
