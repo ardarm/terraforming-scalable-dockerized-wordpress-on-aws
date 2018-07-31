@@ -22,7 +22,7 @@ Components created
 - NAT & Internet Gateway
 - Routing Tables
 
-For the DNS, you can user route53 or another DNS Record service like cloudflare(i'm using it).
+For the DNS, you can user route53 or another DNS Record service(mine is Cloudflare).
 
 **Step-2**
 -------------
