@@ -1,4 +1,4 @@
-# High-Availability Wordpress on AWS & Docker
+# Building High-Availability Scalable Wordpress on AWS with Terraform & Docker Container
 
 _Building wordpress site on AWS using terraform and Docker container_
 
