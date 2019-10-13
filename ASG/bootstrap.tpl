@@ -3,7 +3,7 @@ apt-get -y update
 apt-get -y install unattended-upgrades
 sudo apt-get -y install nfs-common
 mkdir /efs
-sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 ${efsid}.efs.ap-northeast-2.amazonaws.com:/ /efs
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 ${efsid}.efs.ap-southeast-1.amazonaws.com:/ /efs
 sudo apt-get -y install \
     apt-transport-https \
     ca-certificates \

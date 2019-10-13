@@ -20,6 +20,7 @@ resource "aws_db_instance" "wpdb" {
   username               = "wpdb"
   password               = "wpdbwpdb"
   multi_az               = "True"
+  skip_final_snapshot    = "True"
   vpc_security_group_ids = ["${aws_security_group.database.id}"]
   db_subnet_group_name   = "${aws_db_subnet_group.dbsubnetgroup.id}"
   tags {

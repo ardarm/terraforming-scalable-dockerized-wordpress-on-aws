@@ -1,10 +1,13 @@
 provider "aws" {
-    access_key = "${var.aws_access_key}"
-	secret_key = "${var.aws_secret_key}"
 	region     = "${var.aws_region}"
-    profile = "aris"
-	
-	version = "~> 1.28"
+}
+
+terraform {
+   backend "s3" {
+    bucket = "wordpress-terraform"
+    key    = "terraform.tfstate"
+    region = "ap-southeast-1"
+  }
 }
 
 data "aws_caller_identity" "current" {}
