@@ -11,9 +11,9 @@ resource "aws_launch_configuration" "wp_launch" {
 resource "aws_autoscaling_group" "wp_group" {
   name                 = "wordpress-asg"
   launch_configuration = "${aws_launch_configuration.wp_launch.name}"
-  desired_capacity     = 1
-  min_size             = 1
-  max_size             = 2
+  desired_capacity     = 2
+  min_size             = 2
+  max_size             = 10
   vpc_zone_identifier = ["${aws_subnet.public-a.id}","${aws_subnet.public-b.id}"]
   load_balancers = ["${aws_elb.wordpress.id}"]
   lifecycle {
@@ -23,7 +23,7 @@ resource "aws_autoscaling_group" "wp_group" {
 
 resource "aws_autoscaling_policy" "wordpresspolicy" {
   name                   = "wordpress-policy-high"
-  scaling_adjustment     = 1
+  scaling_adjustment     = 2
   adjustment_type        = "ChangeInCapacity"
   cooldown               = 300
   autoscaling_group_name = "${aws_autoscaling_group.wp_group.name}"
@@ -31,7 +31,7 @@ resource "aws_autoscaling_policy" "wordpresspolicy" {
 
 resource "aws_autoscaling_policy" "wordpresspolicylow" {
   name                   = "wordpress-policy-low"
-  scaling_adjustment     = -1
+  scaling_adjustment     = -2
   adjustment_type        = "ChangeInCapacity"
   cooldown               = 300
   autoscaling_group_name = "${aws_autoscaling_group.wp_group.name}"
