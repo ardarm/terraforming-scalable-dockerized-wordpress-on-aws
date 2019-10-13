@@ -11,9 +11,7 @@ Pre-requisite to run the script :
 
 Clone this project and choose whether you want to deploy this into ASG(Autoscalling Group) or you need just 1 instance without ASG. ASG folder for the first choice and Non-ASG folder for second choice.
 
-Command :
-terraform init
-terraform apply
+Command : terraform init && terraform apply
 
 
 **Non-ASG**
